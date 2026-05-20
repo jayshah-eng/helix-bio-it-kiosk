@@ -81,15 +81,17 @@ html, body {
   gap: 10px;
 }
 .chrome-logo .logo-img-wrap {
-  background: rgba(255,255,255,0.92);
-  border-radius: 8px;
-  padding: 5px 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
 }
 .chrome-logo .helix-logo-img {
-  height: 26px;
+  height: 34px;
   width: auto;
   display: block;
+  filter: brightness(0) invert(1);
+  opacity: 0.88;
+  transition: filter 0.5s ease, opacity 0.5s ease;
 }
 
 .chrome-url {
